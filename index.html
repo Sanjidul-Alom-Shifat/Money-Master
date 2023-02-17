@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-11/12 md:w-3/4 mx-auto ">
+    <header class="my-6 text-center">
+        <h1 class="text-5xl md:text-7xl text-green-500 font-bold inline-block">Money Master</h1>
+        <!-- <img class="inline-block" src="image/money-icon.png" alt=""> -->
+    </header>
+
+    <main>
+        <section class="mb-20 mt-10 lg:mt-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
+                <div class="">
+                    <img class="rounded-lg" src="image/money-bg.jpg" alt="">
+                </div>
+                <div class="bg-green-50 rounded-lg p-5 px-8 ">
+                    <div class="mb-6">
+                        <div class="text-center">
+                            <h2 class="font-medium text-2xl uppercase mb-4">Income</h2>
+                            <label>Income: </label>
+                            <input id="income"
+                            class="p-3 w-1/2 sm:w-1/3 placeholder:text-sm placeholder:font-light bg-gray-200 text-black font-medium rounded-md"
+                            value="" placeholder="Enter number" type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-center">
+                            <h2 class="font-medium text-2xl uppercase mb-4">Expensive</h2>
+                            <div class="block">
+                                <label class="mr-2 text-end">Food: </label>
+                                <input id="food"
+                                    class="mb-5 p-3 w-1/2 sm:w-1/3 placeholder:text-sm placeholder:font-light bg-gray-200 text-black font-medium rounded-md"
+                                    value="" placeholder="Enter number" type="text">
+                            </div>
+
+                            <div class="block">
+                                <label class="mr-2 text-end">Rent: </label>
+                                <input id="rent"
+                                    class="mb-5 p-3 w-1/2 sm:w-1/3 placeholder:text-sm placeholder:font-light bg-gray-200 text-black font-medium rounded-md"
+                                    value="" placeholder="Enter number" type="text">
+                            </div>
+
+                            <div class="block">
+                                <label class="mr-2 text-end">Clothes: </label>
+                                <input id="clothes"
+                                    class="mb-5 p-3 w-1/2 sm:w-1/3 placeholder:text-sm placeholder:font-light bg-gray-200 text-black font-medium rounded-md"
+                                    value="" placeholder="Enter number" type="text">
+                            </div>
+
+                            <div class="block">
+                                <label class="mr-2 text-end">Others: </label>
+                                <input id="others"
+                                    class="mb-5 p-3 w-1/2 sm:w-1/3 placeholder:text-sm placeholder:font-light bg-gray-200 text-black font-medium rounded-md"
+                                    value="" placeholder="Enter number" type="text">
+                            </div>
+                            <button id="calculate-btn"
+                                class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-5 rounded-lg">Calculate</button>
+                        </div>
+
+                        <p class="font-semibold text-xl text-center mt-5">Total Expenses: <span
+                                id="total-expenses">0</span>
+                        </p>
+                        <p class="font-semibold text-xl text-center mt-2">Balance: <span id="balance">0</span>
+                        </p>
+
+                        <div class="text-center">
+                            <label>Save: </label>
+                            <input id="save"
+                                class="p-3 w-1/2 sm:w-2/5 placeholder:font-light placeholder:text-sm bg-gray-200 text-black font-medium rounded-md"
+                                value="" placeholder="Enter Number" type="text">
+
+                            <span class="px-1">%</span>
+
+                            <button id="save-btn"
+                                class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 mt-5 rounded-lg inline">Calculate Save</button>
+                        </div>
+
+                        <p class="font-semibold text-xl text-center mt-6">Saving Amount: <span
+                                id="saving-amount">0</span>
+                        </p>
+                        <p class="font-semibold text-xl text-center mt-2">Remaining Amount: <span id="remain">0</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/style.js"></script>
+    <script src="js/style2.js"></script>
+    
+</body>
+
+</html>
